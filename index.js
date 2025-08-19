@@ -1668,8 +1668,6 @@ client.on(Events.InteractionCreate, async (interaction) => {
           console.error(`❌ Erro ao enviar mensagem de reprovação para canal de resultados:`, sendError);
           console.error(`Canal: ${resultados.name} (${resultados.id})`);
           console.error(`Permissões do bot no canal:`, resultados.permissionsFor(guild.members.me));
-        } else {
-          console.error(`❌ Canal de resultados não encontrado: ${resultadosId}`);
         }
 
         // Tentar enviar DM para o usuário
